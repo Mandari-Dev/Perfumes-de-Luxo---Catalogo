@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <h1> Realeza dos Aromas </h1>
+
+        <div class="search-box">
+            <input type="text" id="busca" placeholder="Buscar">
+          
+        </div>
+
+        
+        <select id="filtroCategoria">
+            <option value="todos"> Todas categorias</option>
+            <option value="Amadeirado">Amadeirado</option>
+            <option value="Doce">Doce</option> 
+            <option value="Citrico">Cítrico</option>
+            <option value="Arabe">Arabe</option>
+            <option value="Floral">Floral</option>
+        </select>
+
+        <div id="iconeCarrinho">🛒 <span id="contadorCarrinho">0</span></div>
+    </header>
+
+                <div id="painelCarrinho" style="display: none;">
+                    <div class="painel-header">
+                    <h2>Seu carrinho</h2>
+                    <button id="fecharCarrinho">X</button>
+                    </div>
+                    <div id="listaCarrinho"></div>
+                    <p id="totalCarrinho">Total: R$ 0,00</p>
+
+                    <!-- limpar carrinho-->
+                     <button id="btnLimparCarrinho" style="width: 100%; padding: 10px; margin-top: 10px; background-color: #4a1023; color: #fff; border: none; border-radius: 4px; cursor: pointer;">Limpar Carrinho</button>
+                </div>
+
+
+            <div class="produtos">
+                <!--Perfume 1 AMADEIRADO-->
+               <div class="card" data-nome="Revelry" data-categoria="Amadeirado">
+                <img src="img/Amadeirado.jpg" alt="Frasco 50ml">
+                <h3>Revelry</h3>
+                <p>Perfume com toque amadeirado marcante.</p>
+                <p class="preco">R$ 250,00</p>
+            
+                <button class="btn-carrinho">Adicionar ao carrinho</button>
+        
+               </div>
+
+               <!--Perfume 1 AMADEIRADO2-->
+               <div class="card" data-nome="Fire" data-categoria="Amadeirado">
+                <img src="img/Amadeirado2.jpg" alt="Frasco 100ml">
+                <h3>Fire in the Dark</h3>
+                <p>A sofisticação das madeiras nobres em uma fragrância marcante, elegante e de alta fixação.</p>
+                <p class="preco">R$ 300,00</p>
+            
+                <button class="btn-carrinho">Adicionar ao carrinho</button>
+        
+               </div>
+
+               <!--Perfume 2 CITRICO-->
+             <div class="card" data-nome="Chanel" data-categoria="Citrico">
+                <img src="img/Cítrico.jpg" alt="Frasco 100ml">
+                <h3>Chanel</h3>
+                <p>Perfume Cítrico com toque suave que deixa marcado o dia todo.</p>
+                <p class="preco">R$ 300,00</p>
+                <button class="btn-carrinho">Adicionar ao carrinho</button>
+               
+               </div>
+
+                <!--Perfume 2 CITRICO2-->
+             <div class="card" data-nome="Combava Cedrat" data-categoria="Citrico">
+                <img src="img/Citrico2.jpg" alt="Frasco 100ml">
+                <h3>Cedrát</h3>
+                <p>Notas vibrantes e suculentas de frutas cítricas em uma fragrância leve e revigorante, perfeita para iluminar o dia a dia.</p>
+                <p class="preco">R$ 200,00</p>
+                <button class="btn-carrinho">Adicionar ao carrinho</button>
+               
+               </div>
+
+               <!--Perfume 3 DOCE-->
+               <div class="card" data-nome="Bvlgari-Rose Goldea" data-categoria="Doce">
+                <img src="img/Doce.jpg" alt="Frasco 90ml">
+                <h3>Bvlgari - Rose Goldea</h3>
+                <p>Perfume com notas adocicadas, perfeito para usar a noite.</p>
+                <p class="preco"> R$ 200,00</p>
+                <button class="btn-carrinho">Adicionar ao carrinho</button>
+                
+               </div>
+
+               <!--Perfume 3 DOCE2-->
+               <div class="card" data-nome="Miss Dior" data-categoria="Doce">
+                <img src="img/Doce2.jpg" alt="Frasco 80ml">
+                <h3>Miss Dior</h3>
+                <p>Uma explosão de aconchego e sofisticação. Notas ricas e envolventes que combinam a cremosidade de acordes adocicados com um toque sofisticado.</p>
+                <p class="preco"> R$ 400,00</p>
+                <button class="btn-carrinho">Adicionar ao carrinho</button>
+                
+               </div>
+
+               <!--Perfume 4 ARABE -->
+               <div class="card" data-nome="Solare" data-categoria="Arabe">
+                <img src="img/Arabe.jpg" alt="Frasco 150ml">
+                <h3>Solare</h3>
+                <p>Perfume Arabe intenso com forte presença e um toque de especiárias.</p>
+                <p class="preco"> R$ 400,00</p>
+                <button class="btn-carrinho">Adicionar ao carrinho</button>
+                
+               </div>
+
+               <!--Perfume 4 ARABE2 -->
+               <div class="card" data-nome="Creed" data-categoria="Arabe">
+                <img src="img/Arabe2.png.jpg" alt="Frasco 150ml">
+                <h3>Creed</h3>
+                <p>Luxo, mistério e intensidade. Uma fragrância oriental marcante e exótica, com altíssima fixação e pura sofisticação.</p>
+                <p class="preco"> R$ 450,00</p>
+                <button class="btn-carrinho">Adicionar ao carrinho</button>
+                
+               </div>
+
+               <!--Perfume 5 FLORAL -->
+               <div class="card" data-nome="Chanel" data-categoria="Floral">
+                <img src="img/Floral3.jpg" alt="Frasco 80ml">
+                <h3>Chanel</h3>
+                <p>Um bouquet floral sofisticado e envolvente, que traduz a feminilidade e a elegância natural em uma fragrância delicada e marcante.</p>
+                <p class="preco"> R$ 280,00</p>
+                <button class="btn-carrinho">Adicionar ao carrinho</button>
+                
+               </div>
+
+               <!--Perfume 5 FLORAL2 -->
+               <div class="card" data-nome="Narciso" data-categoria="Floral">
+                <img src="img/Floral4.jpg" alt="Frasco 100ml">
+                <h3>Narciso Rodriguez</h3>
+                <p>A delicadeza e a vivacidade das flores em uma fragrância romântica, elegante e irresistivelmente fresca.</p>
+                <p class="preco"> R$ 320,00</p>
+                <button class="btn-carrinho">Adicionar ao carrinho</button>
+                
+               </div>
+
+               <!--Menssagem de nenhum produto encontrado-->
+               <p id="mensagemVazia" style="display: none;">Nenhum produto encontrado.</p>
+            </div>
+                
+<script src="script.js"></script>
+
+</body>
+</html>
